@@ -1,14 +1,14 @@
 import React from 'react';
 
-import './normalize.css'
 import './App.css';
+import './normalize.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>hi
-
-      </h1>
+      <header className="App-header">
+        <h1>hi</h1>
+      </header>
     </div>
   );
 }
