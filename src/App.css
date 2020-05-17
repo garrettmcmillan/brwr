@@ -1,1 +1,53 @@
+:root {
+  --primaryPurple: #5e35b1;
+  --secondaryPurple: #9a7cd7;
+  --primaryBlue: #384db1;
+  --secondaryBlue: #7ebed7;
+  --primaryLight: #fcfbfe;
+}
+body {
+  font-family: 'Montserrat', sans-serif !important;
+  background: var(--primaryBlue);
+}
 
+.space-test {
+  border: 1px solid red;
+}
+
+/* NAVBAR */
+.logo-div {
+}
+.nav-logo {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.05rem;
+  font-size: 6rem;
+  color: var(--primaryLight) !important;
+  padding: 0;
+}
+.nav-slogan {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  padding-left: 1rem;
+  letter-spacing: 0.05rem;
+  color: var(--primaryLight);
+}
+ion-icon {
+  font-size: 2rem;
+  color: var(--primaryLight);
+}
+.nav-dropdown {
+  background: var(--secondaryPurple);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  padding-left: 1rem;
+  letter-spacing: 0.05rem;
+  color: var(--primaryLight) !important;
+}
+@media only screen and (max-width: 600px) {
+  .logo-div {
+    display: none !important;
+  }
+}

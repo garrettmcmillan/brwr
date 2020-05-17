@@ -1,15 +1,17 @@
+/* Component Imports */
 import React from 'react';
+import Navigation from './components/Nav'
 
-import './App.css';
+/* CSS Imports */
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './normalize.css';
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>hi</h1>
-      </header>
-    </div>
+    <React.Fragment>
+      <Navigation />
+    </React.Fragment>
   );
 }
 
