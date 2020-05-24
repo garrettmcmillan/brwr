@@ -16,38 +16,70 @@ body {
 
 /* NAVBAR */
 .logo-div {
+  margin: 0;
+  padding: 0;
 }
 .nav-logo {
   font-family: 'Rubik', sans-serif;
   font-weight: 900;
   letter-spacing: 0.05rem;
-  font-size: 6rem;
+  font-size: 7rem;
   color: var(--primaryLight) !important;
   padding: 0;
+  margin: 0;
+  transform: skew(30deg, -20deg) scaleY(0.77778);
 }
+.nav-logo:hover {
+  text-shadow: var(--secondaryBlue) 15px 20px, var(--secondaryPurple) 30px 40px;
+}
+
 .nav-slogan {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-style: italic;
-  padding-left: 1rem;
+  margin-left: 4rem;
   letter-spacing: 0.05rem;
   color: var(--primaryLight);
+  /*   transform: skew(30deg, -20deg) scaleY(0.77778);
+ */
 }
+
+.nav-slogan:hover {
+  text-shadow: var(--secondaryBlue) -5px -10px,
+    var(--secondaryPurple) -15px -20px;
+}
+
 ion-icon {
-  font-size: 2rem;
+  font-size: 4rem;
   color: var(--primaryLight);
+  margin-top: 1.75rem;
 }
 .nav-dropdown {
+  max-width: 20rem;
+  margin: 0 !important;
   background: var(--secondaryPurple);
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   font-style: italic;
-  padding-left: 1rem;
   letter-spacing: 0.05rem;
   color: var(--primaryLight) !important;
 }
-@media only screen and (max-width: 600px) {
+.nav-dropdown-item {
+  color: var(--primaryLight) !important;
+  padding: 0 1rem !important;
+  text-decoration: none !important;
+}
+.nav-dropdown-item:hover {
+  background: var(--secondaryBlue);
+}
+@media only screen and (max-width: 800px) {
   .logo-div {
     display: none !important;
   }
+}
+/* CALCULATOR */
+.form-div {
+  width: 100px;
+  height: 100vh;
+  margin-top: 20rem;
 }
