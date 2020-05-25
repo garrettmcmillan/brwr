@@ -16,7 +16,8 @@ function App() {
       <Navigation />
       <Switch>
           <Route exact path="/" component={App} />
-          <Route path="/methods" component={App} />
+          <Route path="/tips" component={App} />
+          <Route path="/about" component={App} />
       </Switch>
       <CalcForm />
     </React.Fragment>
