@@ -34,27 +34,7 @@ body {
   color: var(--primaryLight) !important;
   padding: 0;
   margin: 0;
-  /*   transform: skew(30deg, -20deg) scaleY(0.77778);
- */
-}
-.nav-logo:hover {
-  text-shadow: var(--secondaryBlue) 15px 20px, var(--secondaryPurple) 30px 40px;
-}
-
-.nav-slogan {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;
-  font-style: italic;
-  margin-left: 4rem;
-  letter-spacing: 0.05rem;
-  color: var(--primaryLight);
-  /*   transform: skew(30deg, -20deg) scaleY(0.77778);
- */
-}
-
-.nav-slogan:hover {
-  text-shadow: var(--secondaryBlue) -5px -10px,
-    var(--secondaryPurple) -15px -20px;
+  text-shadow: var(--secondaryBlue) 10px 15px, var(--secondaryPurple) 20px 30px;
 }
 
 .nav-icon {
@@ -87,8 +67,7 @@ body {
   .nav-div {
     margin: 0;
   }
-  .form-container {
-  }
+
   .entire-form-div {
     margin-top: 0rem !important;
   }
@@ -130,7 +109,7 @@ body {
   text-align: left;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 0.05rem;
 }
 .form-textarea {
@@ -171,13 +150,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30rem;
 }
 .form-answer-title {
   color: var(--primaryLight);
   text-align: left;
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 2rem;
   letter-spacing: 0.05rem;
+}
+
+/* ABOUT */
+.about-text {
+  text-align: center;
+}
+.brwr-about {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  text-shadow: var(--secondaryBlue) 2px 4px, var(--secondaryPurple) 6px 8px;
 }

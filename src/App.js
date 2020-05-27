@@ -1,8 +1,10 @@
 /* Component Imports */
 import React from 'react';
-import { BrowserRouter as Route, Switch } from 'react-router-dom';
-import Navigation from './components/Nav'
+import { Route, Switch } from 'react-router-dom';
+import Navigation from './components/Nav';
 import CalcForm from './components/CalcForm';
+import About from './components/About';
+import BrewTips from './components/BrewTips';
 
 
 /* CSS Imports */
@@ -14,12 +16,11 @@ function App() {
   return (
     <React.Fragment>
       <Navigation />
-      <Switch>
-          <Route exact path="/" component={App} />
-          <Route path="/tips" component={App} />
-          <Route path="/about" component={App} />
-      </Switch>
-      <CalcForm />
+        <Switch>
+          <Route exact path="/" component={CalcForm} />
+          <Route path="/tips" component={BrewTips} />
+          <Route path="/about" component={About} />
+        </Switch>
     </React.Fragment>
   );
 }

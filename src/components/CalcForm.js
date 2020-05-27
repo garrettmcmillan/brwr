@@ -36,14 +36,11 @@ export default class CalcForm extends Component {
         )    
     }
 
-
     handleChange(e) {
         this.setState({
             coffeeInput: e.target.value
         })
     }
-
-
 
     handleRatioChange(e) {
         this.setState({
@@ -52,11 +49,12 @@ export default class CalcForm extends Component {
     }
     render() {
         return (
+            <React.Fragment>
             <FormImports.Form className="form-container form-text">
                 <FormImports.Form.Group className="entire-form-div">
                     <div className=" form-div" >
                     <FormImports.Form.Row className="  justify-content-center align-items-center">
-                        <FormImports.Form.Label column="lg" lg={3} className="form-title">
+                        <FormImports.Form.Label column="lg" lg={4} className="form-title">
                             amount of coffee <span role="img" aria-label="emoji finger pointing right">👉</span>
                         </FormImports.Form.Label>
                         <FormImports.Form.Control
@@ -68,7 +66,7 @@ export default class CalcForm extends Component {
                             />
                     </FormImports.Form.Row>
                     <FormImports.Form.Row className="  justify-content-center align-items-center">
-                        <FormImports.Form.Label column="lg" lg={3} className="form-title">
+                        <FormImports.Form.Label column="lg" lg={4} className="form-title">
                             brew ratio <span role="img" aria-label="emoji finger pointing right">👉</span>
                         </FormImports.Form.Label>
                         <FormImports.Form.Control as="select"
@@ -79,16 +77,16 @@ export default class CalcForm extends Component {
                             type="number"
                             >
                                 <option value=''>coffee:water</option>
-                                <option value="14">1:14</option>
+                                <option value="14">1:14 (strong)</option>
                                 <option value="15">1:15</option>
                                 <option value="16">1:16</option>
                                 <option value="17">1:17</option>
-                                <option value="18">1:18</option>
+                                <option value="18">1:18 (weak)</option>
                         </FormImports.Form.Control>
                     </FormImports.Form.Row>
                     </div>
                 <br />
-                <FormImports.Button className="form-button" onClick={this.handleSubmit}>calculate h2o</FormImports.Button >
+                <FormImports.Button className="form-button" onClick={this.handleSubmit}>calculate brew</FormImports.Button >
                 
                 <div className="d-flex justify-content-center">
                     {this.state.isSubmitted === true ?
@@ -96,8 +94,9 @@ export default class CalcForm extends Component {
                         <div className="form-answer-div">
                             <br />
                             <br/>
-                            <p className=" form-answer-title">total water amount: {this.state.totalAmount}</p>
-                            <p className=" form-answer-title">estimated bloom amount: {this.state.bloomAmount}</p>
+                            
+                            <p className=" form-answer-title">total water amount <span role="img" aria-label="emoji finger pointing right">👉</span> {this.state.totalAmount}</p>
+                            <p className=" form-answer-title">estimated bloom amount <span role="img" aria-label="emoji finger pointing right">👉</span> ≈{this.state.bloomAmount}</p>
                         </div>
                     : 
                         null
@@ -105,6 +104,7 @@ export default class CalcForm extends Component {
                 </div>
                 </FormImports.Form.Group>
             </FormImports.Form>
+            </React.Fragment>
         )
     }
 }
