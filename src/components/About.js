@@ -3,15 +3,14 @@ import React, { Component } from 'react';
 export default class About extends Component {
     render() {
         return (
-            <div className="form-container">
-                <div className="form-div form-text about-text">
-                <h1>
-                    <span className="brwr-about">brwr</span> was designed b'c the coffee calculator i was using became clunky and overtaken with ads.
-                </h1>
-                <br />
-                <h2>
-                    instead of looking for a new one i decided to just build my own.
-                </h2>
+            <div className="full-page-container">
+                <div className="about-container">
+                    <div className="about-div about-text">
+                        <h1 className="about-title">About Us.</h1>
+                        <p className="about-text">
+                            <span className="brwr-about">brwr </span> is everybody's coffee app. I built it b'c I love coffee just as much as you do. When the coffee calculator I was using became clunky and filled with ads, I decided to just build my own. 
+                        </p>
+                    </div>
                 </div>
             </div>
         )

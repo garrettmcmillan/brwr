@@ -12,11 +12,11 @@ export default class Navigation extends Component {
                     fixed="top"
                     expand="*"
                     variant="dark" 
-                    className="px-sm-5 nav-div"
+                    className="nav-div"
                 >
                     <div className="logo-div d-flex align-items-center">
                         <NavImports.Navbar.Brand href="/" className="nav-logo">
-                            brwr
+                            brwr.
                         </NavImports.Navbar.Brand>
 
                     </div>
@@ -26,15 +26,16 @@ export default class Navigation extends Component {
                     
                     <NavImports.Navbar.Collapse  onToggle className="my-0">
                         <NavImports.Nav onClick={this.setNavExpanded} className="float-right nav-dropdown my-0">
-                            <NavImports.Nav.Link as={Link}  to="/" href="/" className="nav-dropdown-item">
-                                    calculator
-                            </NavImports.Nav.Link>
-                            <NavImports.Nav.Link as={Link}  to="/tips" href="/tips" className="nav-dropdown-item">
-                                    brewing tips
-                            </NavImports.Nav.Link>
                             <NavImports.Nav.Link as={Link}  to="/about" href="/about" className="nav-dropdown-item">
-                                    about
+                                About.
                             </NavImports.Nav.Link>
+                            <NavImports.Nav.Link as={Link}  to="/" href="/" className="nav-dropdown-item">
+                                Calculator.
+                            </NavImports.Nav.Link>
+                            <NavImports.Nav.Link as={Link}  to="/guides" href="/guides" className="nav-dropdown-item">
+                                Brew Guides.
+                            </NavImports.Nav.Link>
+                            
                         </NavImports.Nav>
                     </NavImports.Navbar.Collapse>
                 </NavImports.Navbar>

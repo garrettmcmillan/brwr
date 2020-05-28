@@ -50,53 +50,60 @@ export default class CalcForm extends Component {
     render() {
         return (
             <React.Fragment>
-            <FormImports.Form className="form-container form-text">
+            <div className="full-page-container">
+            <FormImports.Form className="form-wrapper form-text">
                 <FormImports.Form.Group className="entire-form-div">
-                    <div className=" form-div" >
-                    <FormImports.Form.Row className="  justify-content-center align-items-center">
+                    <div className="form-div" >
+                    <FormImports.Form.Row className="justify-content-center align-items-center">
                         <FormImports.Form.Label column="lg" lg={4} className="form-title">
-                            amount of coffee <span role="img" aria-label="emoji finger pointing right">👉</span>
+                            Amount of Coffee  <span role="img" aria-label="emoji finger pointing right">👉</span>
                         </FormImports.Form.Label>
                         <FormImports.Form.Control
-                            className=" form-textarea"
+                            className="form-textarea"
                             onChange={this.handleChange}
                             value={this.coffeeInput}
                             placeholder="in grams plz" 
                             type="number"
                             />
                     </FormImports.Form.Row>
-                    <FormImports.Form.Row className="  justify-content-center align-items-center">
-                        <FormImports.Form.Label column="lg" lg={4} className="form-title">
-                            brew ratio <span role="img" aria-label="emoji finger pointing right">👉</span>
+                    <FormImports.Form.Row className="justify-content-center align-items-center">
+                        <FormImports.Form.Label column="lg" lg={4} className="form-title bg-transparent">
+                            Brew Ratio  <span role="img" aria-label="emoji finger pointing right">👉</span>
                         </FormImports.Form.Label>
+                        <div className="select-style">
                         <FormImports.Form.Control as="select"
-                            className="form-ratio"
+                            className="form-ratio bg-transparent"
                             onChange={this.handleRatioChange}
                             value={this.brewRatio}
-                            placeholder="standard is 1:16" 
                             type="number"
                             >
-                                <option value=''>coffee:water</option>
-                                <option value="14">1:14 (strong)</option>
+                                <option className="" value=''>coffee:water</option>
+                                <option value="14">1:14 ~stronger</option>
                                 <option value="15">1:15</option>
                                 <option value="16">1:16</option>
                                 <option value="17">1:17</option>
-                                <option value="18">1:18 (weak)</option>
+                                <option value="18">1:18 ~weaker</option>
                         </FormImports.Form.Control>
+                        </div>
                     </FormImports.Form.Row>
                     </div>
                 <br />
-                <FormImports.Button className="form-button" onClick={this.handleSubmit}>calculate brew</FormImports.Button >
+                <FormImports.Button className="form-button" onClick={this.handleSubmit}>Calculate.</FormImports.Button >
                 
                 <div className="d-flex justify-content-center">
                     {this.state.isSubmitted === true ?
                         
                         <div className="form-answer-div">
-                            <br />
-                            <br/>
+                            <p className="form-answer-title">
+                                
+                                    Bloom Amount <span role="img" aria-label="emoji finger pointing right">👉</span> {this.state.bloomAmount}ml
+                                
+                            </p>
+                            <p className="form-answer-title">
+                                Total Water Amount <span role="img" aria-label="emoji finger pointing right">👉</span> {this.state.totalAmount}ml
+                                
+                            </p>
                             
-                            <p className=" form-answer-title">total water amount <span role="img" aria-label="emoji finger pointing right">👉</span> {this.state.totalAmount}</p>
-                            <p className=" form-answer-title">estimated bloom amount <span role="img" aria-label="emoji finger pointing right">👉</span> ≈{this.state.bloomAmount}</p>
                         </div>
                     : 
                         null
@@ -104,6 +111,7 @@ export default class CalcForm extends Component {
                 </div>
                 </FormImports.Form.Group>
             </FormImports.Form>
+            </div>
             </React.Fragment>
         )
     }
