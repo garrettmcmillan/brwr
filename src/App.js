@@ -19,9 +19,9 @@ function App() {
       <Router>
         <Navigation />
         <Switch>
-          <Route exact path="/brwr" component={CalcForm} />
-          <Route path="/brwr/guides" component={BrewTips} />
-          <Route path="/brwr/about" component={About} />
+          <Route exact path="/" component={CalcForm} />
+          <Route path="/guides" component={BrewTips} />
+          <Route path="/about" component={About} />
         </Switch>
         </Router>
       <Footer/>
