@@ -62,7 +62,7 @@ a:active {
   padding: 0;
 }
 .nav-logo {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', sans-serif !important;
   font-weight: 900;
   letter-spacing: 0.05rem;
   font-size: 7rem;
@@ -314,12 +314,15 @@ input:placeholder-shown {
   }
   .nav-div {
     padding: 0rem;
-    margin: 0 0.5rem !important;
+    margin: 0 1rem !important;
     flex-direction: row;
   }
 
   .nav-logo {
+    font-family: 'Rubik', sans-serif !important;
+    font-weight: 900 !important;
     font-size: 5rem;
+    font-family: 'Rubik', sans-serif !important;
     padding: 0 !important;
   }
 
@@ -347,7 +350,10 @@ input:placeholder-shown {
     margin-top: 3rem !important;
   }
   .form-div {
-    width: 100vw;
+    width: 97vw;
+  }
+  .form-button {
+    font-size: 1.5rem;
   }
   .form-title {
     width: 13rem;
