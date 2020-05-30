@@ -15,7 +15,7 @@ export default class BrewTips extends Component {
                     </h4>
                     <div className="list-container">
                         <h2 className="list-title">
-                            <strong>Pour Over Guide
+                            <strong>Pour Over
                             </strong>
                         </h2>
                     <ListGroup variant="flush" className="tip-list">
@@ -54,7 +54,7 @@ export default class BrewTips extends Component {
                     <br/>
                     <div className="list-container">
                         <h2 className="list-title">
-                            <strong>French Press Guide
+                            <strong>French Press
                             </strong>
                         </h2>
                     <ListGroup variant="flush" className="tip-list">
