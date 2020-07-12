@@ -5,7 +5,6 @@ import Navigation from './components/Nav';
 import CalcForm from './components/CalcForm';
 import About from './components/About';
 import BrewTips from './components/BrewTips';
-import Footer from './components/Footer';
 
 /* CSS Imports */
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -24,7 +23,6 @@ function App() {
           <Route path="/about" component={About} />
         </Switch>
         </Router>
-      <Footer/>
     </React.Fragment>
   );
 }

@@ -8,7 +8,8 @@ export default class About extends Component {
                     <div className="about-div about-text">
                         <h1 className="about-title">About Us.</h1>
                         <p className="about-text">
-                            <span className="brwr-about">brwr </span> is everybody's coffee app. I built it b'c I love coffee just as much as you do. When the coffee calculator I was using became clunky and filled with ads, I decided to just build my own. 
+                            <span className="brwr-about">brwr </span> was built to be everybody’s coffee app, something for all, even if they’re not obsessed with coffee just yet.
+                            When my search for the perfect coffee calculator came up short I decided to build my own.
                         </p>
                     </div>
                 </div>
